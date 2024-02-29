@@ -6,7 +6,7 @@ import { SiCoffeescript } from "react-icons/si";
 import PriceCard from "@/components/PriceCard";
 export default function Home() {
   return (
-    <div className="w-[100%] h-[100vh] backdrop-blur-[60px] bg-white/30 p-[4em]">
+    <div className="w-[100%] backdrop-blur-[60px] bg-white/30 p-[4em]">
       {/* navigation bar */}
       <nav className="w-[100%] flex justify-between items-center">
         <div className="text-primary font-bold text-xl">Flavored</div>
@@ -49,7 +49,32 @@ export default function Home() {
       </div>
 
       {/* price cards section  */}
-      <PriceCard />
+      <div className="my-[4em] w-[100%] flex justify-between gap-6 items-center">
+        <div className="flex flex-[0.5] gap-6 items-center">
+          <PriceCard
+            img="/images/flower2.gif"
+            title="Americano"
+            description="100% Natural Arabica or Robusta, 30 ml cup"
+            price="$2.50"
+          />
+          <PriceCard
+            img="/images/spawn-image.gif"
+            title="Cappuccino"
+            description="Coffee 50%, milk 50%, 280 ml"
+            price="$3.50"
+          />
+        </div>
+        <div className="flex-[0.5]">
+          <div className="font-bold text-[2.7rem] text-primary leading-[3.6rem]">
+            Lorem Ipsum is <br /> simply dummy text of
+          </div>
+          <div className="leading-[2em] text-[.8rem] py-[1em]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+            voluptatem nihil molestiae dignissimos cumque nostrum voluptas?
+          </div>
+          <Button btnTitle={"Learn More"} />
+        </div>
+      </div>
 
       {/* container div ends here */}
     </div>
