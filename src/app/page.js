@@ -6,7 +6,7 @@ import { SiCoffeescript } from "react-icons/si";
 import PriceCard from "@/components/PriceCard";
 export default function Home() {
   return (
-    <div className="w-[100%] backdrop-blur-[60px] bg-white/30 p-[4em]">
+    <div className="w-[100%] backdrop-blur-[40px] bg-white/30 p-[4em]">
       {/* navigation bar */}
       <nav className="w-[100%] flex justify-between items-center">
         <div className="text-primary font-bold text-xl">Flavored</div>
@@ -65,7 +65,7 @@ export default function Home() {
           />
         </div>
         <div className="flex-[0.5]">
-          <div className="font-bold text-[2.7rem] text-primary leading-[3.6rem]">
+          <div className="font-bold text-[2rem] text-primary leading-[1.4em]">
             Lorem Ipsum is <br /> simply dummy text of
           </div>
           <div className="leading-[2em] text-[.8rem] py-[1em]">
@@ -74,6 +74,32 @@ export default function Home() {
           </div>
           <Button btnTitle={"Learn More"} />
         </div>
+      </div>
+
+      {/* section with text on left and pic on right */}
+      <div className="flex justify-between items-center">
+        {/* left div */}
+        <div>
+          <div className="font-bold text-[2rem] text-primary leading-[1.4em]">
+            Lorem Ipsum is simply dummy text <br /> of the printing and
+            typesetting <br /> industry.
+          </div>
+          <div className="leading-[2em] text-[.8rem] py-[1em] tracking-wide">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            <br /> sequi accusamus expedita iure voluptas est veritatis
+            assumenda, <br />
+            tempore delectus atque sit dignissimos ducimus ea culpa dolores
+            <br />
+            impedit repellendus! Praesentium, quasi! Blanditiis inventore iusto
+          </div>
+          <Button btnTitle={"Learn More"} />
+        </div>
+        {/* right div containing image */}
+        <img
+          className="w-[350px] text-right"
+          src="/images/coffee-heart.gif"
+          alt=""
+        />
       </div>
 
       {/* container div ends here */}
