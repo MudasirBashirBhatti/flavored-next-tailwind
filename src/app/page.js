@@ -4,6 +4,17 @@ import { GiCoffeeBeans } from "react-icons/gi";
 import { SiBuymeacoffee } from "react-icons/si";
 import { SiCoffeescript } from "react-icons/si";
 import PriceCard from "@/components/PriceCard";
+import { FaAngleLeft } from "react-icons/fa6";
+import { RiHomeSmileLine } from "react-icons/ri";
+import { BsCart2 } from "react-icons/bs";
+import { PiUserLight } from "react-icons/pi";
+import { RiBarChartHorizontalLine } from "react-icons/ri";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { FaPlus } from "react-icons/fa6";
+
+import { FaApple } from "react-icons/fa";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+
 export default function Home() {
   return (
     <div className="w-[100%] backdrop-blur-[40px] bg-white/30 p-[4em]">
@@ -36,10 +47,10 @@ export default function Home() {
           </button>
           {/*four menu-items icons */}
           <div className="flex gap-3 items-center my-[1.5em]">
-            <TbCoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary" />
-            <SiBuymeacoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary" />
-            <SiCoffeescript className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary" />
-            <GiCoffeeBeans className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary" />
+            <TbCoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
+            <SiBuymeacoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
+            <SiCoffeescript className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
+            <GiCoffeeBeans className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
           </div>
         </div>
         {/* right section */}
@@ -48,7 +59,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* price cards section  */}
+      {/* price cards section */}
       <div className="my-[4em] w-[100%] flex justify-between gap-6 items-center">
         <div className="flex flex-[0.5] gap-6 items-center">
           <PriceCard
@@ -100,6 +111,112 @@ export default function Home() {
           src="/images/coffee-heart.gif"
           alt=""
         />
+      </div>
+
+      {/* available apps section */}
+      <div className="flex gap-[2.5em] my-[4em]">
+        {/* first container  */}
+        <div className=" rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c] ">
+          <FaAngleLeft className="text-primary" />
+          <div className="text-primary font-bold py-[1em] text-[1.3rem]">
+            Coffee
+          </div>
+          <button
+            className={`px-[1.3em] py-[.3em] text-[.9em] bg-primary text-secondry rounded-full`}
+          >
+            View Menu
+          </button>
+          <div className="flex justify-between items-center my-[1.5em]">
+            <TbCoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
+            <SiBuymeacoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
+            <SiCoffeescript className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
+            <GiCoffeeBeans className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
+          </div>
+          <div className="flex justify-between items-center w-[100%]">
+            <div className="scale-[0.5] mx-[-50%] ml-[-64px]">
+              <PriceCard
+                img="/images/spawn-image.gif"
+                title="Cappuccino"
+                description="Coffee 50%, milk 50%, 280 ml"
+                price="$3.50"
+              />
+            </div>
+            <div className="scale-[0.5] mx-[-50%] mr-[-64px]">
+              <PriceCard
+                img="/images/spawn-image.gif"
+                title="Cappuccino"
+                description="Coffee 50%, milk 50%, 280 ml"
+                price="$3.50"
+              />
+            </div>
+          </div>
+          <div className="text-primary mt-[1em] mb-[.5em] w-[80%] backdrop-blur-[50px] bg-gradient-to-tr from-[#b8b8b814] to-[#ffffff5c] p-[1em] rounded-[15px]">
+            <div className="font-bold">Moccaccino</div>
+            <div className="text-[12px] pt-2">
+              Mix with Coffee 30%, milk 50%, 280 ml + foam
+            </div>
+          </div>
+          {/* coffee card menus */}
+
+          <div className="flex justify-evenly items-center text-secondry bg-primary rounded-[50px] py-[.3em] text-[2rem]">
+            <RiHomeSmileLine />
+            <BsCart2 />
+            <PiUserLight />
+            <RiBarChartHorizontalLine className="rotate-180" />
+          </div>
+        </div>
+        {/* second container  */}
+        <div className="rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c]">
+          <FaAngleLeft className="text-primary" />
+
+          <img
+            className="scale-[1.3] mt-[51px]"
+            src="/images/single-heart.gif"
+            alt=""
+          />
+
+          <div className="text-primary mt-[4em] mb-[.5em]">
+            <div className="font-bold">Latte Grand</div>
+            <div className="text-[12px] pt-2">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book.
+            </div>
+
+            <div className="font-bold text-[.8rem] py-[1em]">Total Price</div>
+            {/* bottom price */}
+            <div className="flex items-center w-[122%] justify-between">
+              <div className="flex items-center justify-between gap-[20px]">
+                <div className="text-[.8rem] font-bold px-[25px] py-[8px] bg-secondry/60 inline-block rounded-[50px]">
+                  $3.50
+                </div>
+
+                <IoIosHeartEmpty className="w-[30px] h-[30px] p-[6px] bg-primary/15 scale-[1.3] rounded-[10px] text-primary" />
+              </div>
+              <button className="flex items-center text-secondry justify-between bg-primary py-[10px] pl-[20px] pr-[10px] text-[.8rem] w-[150px] rounded-[50px]">
+                Add to Cart{" "}
+                <FaPlus className="w-[20px] h-[20px] p-[6px] bg-secondry/20 scale-[1.3] rounded-[10px] text-secondry" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col self-end mb-[6em]">
+          <div className="font-bold text-[2rem] text-primary leading-[1.4em]">
+            App is Available
+          </div>
+          <div className="leading-[2em] text-[.8rem] py-[1em]">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when and unknown printer took a gallery of
+            type and scramble it to make a type specimen book.
+          </div>
+          <div className="flex items-center gap-[1.6em]">
+            <FaApple className="w-[36px] h-[36px] p-[6px] bg-secondry/40 scale-[1.3] rounded-[10px] text-primary" />
+            <IoLogoGooglePlaystore className="w-[36px] h-[36px] p-[6px] bg-secondry/40 scale-[1.3] rounded-[10px] text-primary" />
+          </div>
+        </div>
+        <div></div>
+        <div></div>
       </div>
 
       {/* container div ends here */}

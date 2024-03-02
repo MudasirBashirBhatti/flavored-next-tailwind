@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 body {
   width: 100%;
@@ -31,4 +32,9 @@ nav ul li {
     rgba(75, 12, 4, 1) 29%,
     rgba(219, 158, 3, 1) 100%
   );
+}
+
+.elmTransition {
+  transition: all;
+  transition-duration: 0.1s;
 }
