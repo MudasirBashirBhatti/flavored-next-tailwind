@@ -14,10 +14,11 @@ import { FaPlus } from "react-icons/fa6";
 
 import { FaApple } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { CgCoffee } from "react-icons/cg";
 
 export default function Home() {
   return (
-    <div className="w-[100%] backdrop-blur-[40px] bg-white/30 p-[4em]">
+    <div className="w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 p-[4em]">
       {/* navigation bar */}
       <nav className="w-[100%] flex justify-between items-center">
         <div className="text-primary font-bold text-xl">Flavored</div>
@@ -27,7 +28,7 @@ export default function Home() {
           <li>About Us</li>
           <li>Contact Us</li>
           <button
-            className={`px-[.8em] py-[.3em] text-[.9em] bg-primary text-secondry rounded-full`}
+            className={`px-[.8em] py-[.46em] text-[.9em] bg-primary text-secondry rounded-full`}
           >
             Coffee Shop
           </button>
@@ -55,12 +56,16 @@ export default function Home() {
         </div>
         {/* right section */}
         <div>
-          <img className="w-[400px]" src="/images/two-hearts.gif" alt="" />
+          <img
+            className="w-[400px] rotatingAnim"
+            src="/images/two-hearts.gif"
+            alt=""
+          />
         </div>
       </div>
 
       {/* price cards section */}
-      <div className="my-[4em] w-[100%] flex justify-between gap-6 items-center">
+      <div className="my-[4em] w-[100%] flex justify-between gap-6 items-center mt-[8em]">
         <div className="flex flex-[0.5] gap-6 items-center">
           <PriceCard
             img="/images/flower2.gif"
@@ -116,13 +121,13 @@ export default function Home() {
       {/* available apps section */}
       <div className="flex gap-[2.5em] my-[4em]">
         {/* first container  */}
-        <div className=" rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c] ">
+        <div className=" rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c]">
           <FaAngleLeft className="text-primary" />
           <div className="text-primary font-bold py-[1em] text-[1.3rem]">
             Coffee
           </div>
           <button
-            className={`px-[1.3em] py-[.3em] text-[.9em] bg-primary text-secondry rounded-full`}
+            className={`px-[1.3em] py-[.3em] text-[.9em] w-[50%] bg-primary text-secondry rounded-full`}
           >
             View Menu
           </button>
@@ -166,7 +171,7 @@ export default function Home() {
           </div>
         </div>
         {/* second container  */}
-        <div className="rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c]">
+        <div className="rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c] flex justify-between flex-col">
           <FaAngleLeft className="text-primary" />
 
           <img
@@ -215,8 +220,76 @@ export default function Home() {
             <IoLogoGooglePlaystore className="w-[36px] h-[36px] p-[6px] bg-secondry/40 scale-[1.3] rounded-[10px] text-primary" />
           </div>
         </div>
-        <div></div>
-        <div></div>
+      </div>
+
+      <div>
+        <div className="text-[white] text-[.7rem]">LET'S TALK</div>
+        <div className="flex justify-between items-center">
+          <div className="font-bold text-[2rem] text-primary leading-[1.4em]">
+            Want to Reserve a Table?
+          </div>
+          <button
+            className={`px-[2.8em] py-[.7em] text-[.9em] bg-primary text-secondry rounded-full btnShadow`}
+          >
+            View Menu
+          </button>
+        </div>
+      </div>
+
+      {/* border rule  */}
+      <div className="w-[100%] h-[2px] bg-[#ffffff66] mt-[2em] mb-[1em]"></div>
+
+      <div className="w-[70%] text-[.7rem]">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi
+        quas distinctio esse tempore fuga iste magnam autem commodi natus
+        quaerat ducimus optio blanditiis culpa aut ut, quia minus. Dolores porro
+        excepturi iusto alias doloremque magni soluta volupt Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Iure, accusantium! atum neque
+        velit?
+      </div>
+
+      {/* footer section */}
+      <div className="footer flex justify-between mt-[4em] px-[2em]">
+        <div className="text-[white] text-[1.4rem] ">
+          <div className="flex gap-2 items-center font-bold">
+            Flavored <CgCoffee />
+          </div>
+          <div className="text-[.8rem]">Wake up to something special.</div>
+        </div>
+        {/* services  */}
+        <div>
+          <div className="text-[1.4rem] text-primary font-bold">
+            Our Services
+          </div>
+          <ul className="text-primary text-[.8rem]">
+            <li>Pricing</li>
+            <li>Tracking</li>
+            <li>Report a Bug</li>
+            <li>Terms of Services</li>
+          </ul>
+        </div>
+        {/* Coumpany  */}
+        <div>
+          <div className="text-[1.4rem] text-primary font-bold">
+            Our Company
+          </div>
+          <ul className="text-primary text-[.8rem]">
+            <li>Pricing</li>
+            <li>Tracking</li>
+            <li>Report a Bug</li>
+            <li>Terms of Services</li>
+          </ul>
+        </div>
+        {/* services  */}
+        <div>
+          <div className="text-[1.4rem] text-primary font-bold">Address</div>
+          <ul className="text-primary text-[.8rem]">
+            <li>Pricing</li>
+            <li>Tracking</li>
+            <li>Report a Bug</li>
+            <li>Terms of Services</li>
+          </ul>
+        </div>
       </div>
 
       {/* container div ends here */}

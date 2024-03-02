@@ -6,7 +6,7 @@ const PriceCard = (props) => {
   return (
     <div className="bg-secondry w-[250px] h-[250px] p-[1.4em] rounded-[40px] relative backdrop-blur-[50px] bg-secondry/40">
       <img
-        className="absolute left-[50%] translate-x-[-50%] w-[70%] top-[-88px]"
+        className="absolute left-[50%] w-[70%] top-[-88px] translate-x-[-50%]"
         src={props.img}
         alt=""
       />
