@@ -21,7 +21,12 @@ export default function Home() {
     <div className="w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 p-[4em]">
       {/* navigation bar */}
       <nav className="w-[100%] flex justify-between items-center">
-        <div className="text-primary font-bold text-xl">Flavored</div>
+        <div className="text-primary text-[1.4rem] ">
+          <div className="flex gap-2 items-center font-bold">
+            Flavored <CgCoffee />
+          </div>
+          <div className="text-[.8rem]">Wake up to something special.</div>
+        </div>
         <ul className="flex justify-between items-center w-[500px] list-none text-primary">
           <li>Home</li>
           <li>Coffee Menu</li>
