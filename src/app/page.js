@@ -18,9 +18,9 @@ import { CgCoffee } from "react-icons/cg";
 
 export default function Home() {
   return (
-    <div className="p-[1em] w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 lg:p-[4em] pb-[0em]">
+    <div className="p-[1em] w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 lg:p-[4em] pb-[0em] md:p-[2em]">
       {/* navigation bar */}
-      <nav className="w-[100%]  justify-between items-center hidden">
+      <nav className="w-[100%] justify-between items-center hidden">
         <div className="text-primary text-[1.4rem] ">
           <div className="flex gap-2 items-center font-bold">
             Flavored <CgCoffee />
@@ -40,19 +40,19 @@ export default function Home() {
         </ul>
       </nav>
       {/* double heart coffe (menu) section */}
-      <div className="flex flex-col-reverse justify-between  items-center md:flex-row  lg:mt-[2.4rem]">
+      <div className="flex flex-col-reverse justify-between  items-center sm:flex-row  lg:mt-[2.4rem]">
         {/* left section  */}
-        <div className="text-center">
-          <div className="text-[2rem] lg:text-[3rem] lg:mb-[.5em] font-bold text-primary">
-            Coffee <br className="hidden" /> The Best For You
+        <div className="text-center sm:text-left">
+          <div className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] lg:mb-[.5em] font-bold text-primary">
+            Coffee <br className="hidden sm:block" /> The Best For You
           </div>
           <button
-            className={`px-[2.8em] my-[2em] py-[.7em] text-[.9em] bg-primary text-secondry rounded-full btnShadow`}
+            className={`px-[2.8em] my-[2em] py-[.7em] text-[.9em] bg-primary text-secondry rounded-full btnShadow sm:my-[1.5em]`}
           >
             View Menu
           </button>
           {/*four menu-items icons */}
-          <div className="flex gap-3 justify-between items-center my-[1.5em]">
+          <div className="flex gap-3 justify-between items-center my-[1.5em] sm:my-[0em] sm:justify-normal">
             <TbCoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
             <SiBuymeacoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
             <SiCoffeescript className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
@@ -62,7 +62,7 @@ export default function Home() {
         {/* right section */}
         <div>
           <img
-            className="w-[200px] my-[1em] lg:w-[300px] rotatingAnim"
+            className="w-[200px] sm:w-[250px] md:w-[280px] lg:w-[300px] rotatingAnim"
             src="/images/two-hearts.gif"
             alt=""
           />
@@ -70,8 +70,8 @@ export default function Home() {
       </div>
 
       {/* price cards section */}
-      <div className="mt-[1em] my-[2em] w-[100%] flex flex-col-reverse  md:my-[4em]  justify-between gap-6 items-center lg:mt-[8em]">
-        <div className="flex flex-col gap-[8rem] flex-[0.5] lg:gap-6 items-center">
+      <div className="mt-[1em] my-[2em] w-[100%] flex flex-col-reverse justify-between gap-6 items-center sm:my-[4em] sm:flex-col-reverse lg:flex-row">
+        <div className="flex flex-col gap-[8rem] flex-[0.5] items-center sm:flex-row sm:gap-6 sm:mb-[0em] sm:mt-[4em]">
           <PriceCard
             img="/images/flower2.gif"
             title="Americano"
@@ -85,9 +85,9 @@ export default function Home() {
             price="$3.50"
           />
         </div>
-        <div className="flex-[0.5] mb-[7em]">
-          <div className="font-bold text-[1.5rem] text-primary leading-[1.4em] lg:text-[2rem]">
-            Lorem Ipsum is <br className="hidden lg:block" /> simply dummy text
+        <div className="flex-[0.5] mb-[7em] sm:mb-[2em] md:text-center lg:text-left">
+          <div className="font-bold text-[1.5rem] text-primary leading-[1.4em] md:text-[1.8rem] lg:text-[2rem]">
+            Lorem Ipsum is <br className="hidden sm:block" /> simply dummy text
             of
           </div>
           <div className="leading-[2em] text-[.8rem] py-[1em]">
@@ -99,20 +99,20 @@ export default function Home() {
       </div>
 
       {/* section with text on left and pic on right */}
-      <div className="flex flex-col-reverse mb-[2em] lg:justify-between lg:items-center">
+      <div className="flex flex-col-reverse mb-[2em] sm:justify-between sm:items-center sm:flex-row">
         {/* left div */}
         <div>
-          <div className="font-bold text-[1.5rem] text-primary leading-[1.4em] lg:text-[2rem]">
-            Lorem Ipsum is simply dummy text <br className="hidden lg:block" />{" "}
-            of the printing and typesetting <br className="hidden lg:block" />{" "}
+          <div className="font-bold text-[1.5rem] text-primary leading-[1.4em] md:text-[1.8rem] lg:text-[2rem]">
+            Lorem Ipsum is simply dummy text <br className="hidden sm:block" />{" "}
+            of the printing and typesetting <br className="hidden sm:block" />{" "}
             industry.
           </div>
           <div className="leading-[2em] text-[.8rem] py-[1em] tracking-wide">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            <br /> sequi accusamus expedita iure voluptas est veritatis
-            assumenda, <br />
+            <br className="hidden sm:block" /> sequi accusamus expedita iure
+            voluptas est veritatis assumenda, <br className="hidden sm:block" />
             tempore delectus atque sit dignissimos ducimus ea culpa dolores
-            <br />
+            <br className="hidden sm:block" />
             impedit repellendus! Praesentium, quasi! Blanditiis inventore iusto
           </div>
           <Button btnTitle={"Learn More"} />
@@ -126,7 +126,7 @@ export default function Home() {
       </div>
 
       {/* available apps section */}
-      <div className="flex flex-col my-[0em] items-center gap-[2.5em] lg:my-[4em]">
+      <div className="flex flex-col my-[0em] items-center gap-[2.5em] lg:my-[4em] sm:flex-wrap sm:flex-row sm:justify-center">
         {/* first container  */}
         <div className=" rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c]">
           <FaAngleLeft className="text-primary" />
@@ -212,8 +212,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col mb-[3em] self-end lg:mb-[6em]">
-          <div className="font-bold text-[1.5rem] lg:text-[2rem] text-primary leading-[1.4em]">
+        <div className="flex flex-col mb-[3em] self-end md:text-center lg:mb-[6em] md:items-center">
+          <div className="font-bold text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] text-primary leading-[1.4em]">
             App is Available
           </div>
           <div className="leading-[2em] text-[.8rem] py-[1em]">
@@ -231,12 +231,12 @@ export default function Home() {
 
       <div>
         <div className="text-[white] text-[.7rem]">LET'S TALK</div>
-        <div className="flex flex-col lg:justify-between lg:items-center">
-          <div className="font-bold pt-[0.5em] pb-[.5em] text-[1.5rem] lg:text-[2rem] text-primary leading-[1.4em]">
+        <div className="flex flex-col sm:items-center sm:flex-row sm:justify-between">
+          <div className="font-bold pt-[0.5em] pb-[.5em] text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] text-primary leading-[1.4em]">
             Want to Reserve a Table?
           </div>
           <button
-            className={`px-[2.8em] self-start py-[.7em] text-[.9em] bg-primary text-secondry rounded-full btnShadow`}
+            className={`px-[2.8em] self-start py-[.7em] text-[.9em] bg-primary text-secondry rounded-full btnShadow sm:self-center`}
           >
             View Menu
           </button>
@@ -246,7 +246,7 @@ export default function Home() {
       {/* border rule  */}
       <div className="w-[100%] h-[2px] bg-[#ffffff66] mt-[2em] mb-[1em]"></div>
 
-      <div className="w-[100%] lg:w-[70%] text-[.7rem]">
+      <div className="w-[100%] lg:w-[70%] text-[.7rem] md:text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi
         quas distinctio esse tempore fuga iste magnam autem commodi natus
         quaerat ducimus optio blanditiis culpa aut ut, quia minus. Dolores porro
@@ -263,39 +263,41 @@ export default function Home() {
           </div>
           <div className="text-[.8rem]">Wake up to something special.</div>
         </div>
-        {/* services  */}
-        <div>
-          <div className="text-[1.4rem] text-primary font-bold">
-            Our Services
+        <div className="flex flex-col justify-between sm:flex-row">
+          {/* services  */}
+          <div>
+            <div className="text-[1.4rem] text-primary font-bold">
+              Our Services
+            </div>
+            <ul className="text-primary text-[.8rem]">
+              <li>Pricing</li>
+              <li>Tracking</li>
+              <li>Report a Bug</li>
+              <li>Terms of Services</li>
+            </ul>
           </div>
-          <ul className="text-primary text-[.8rem]">
-            <li>Pricing</li>
-            <li>Tracking</li>
-            <li>Report a Bug</li>
-            <li>Terms of Services</li>
-          </ul>
-        </div>
-        {/* Coumpany  */}
-        <div>
-          <div className="text-[1.4rem] text-primary font-bold">
-            Our Company
+          {/* Coumpany  */}
+          <div>
+            <div className="text-[1.4rem] text-primary font-bold">
+              Our Company
+            </div>
+            <ul className="text-primary text-[.8rem]">
+              <li>Pricing</li>
+              <li>Tracking</li>
+              <li>Report a Bug</li>
+              <li>Terms of Services</li>
+            </ul>
           </div>
-          <ul className="text-primary text-[.8rem]">
-            <li>Pricing</li>
-            <li>Tracking</li>
-            <li>Report a Bug</li>
-            <li>Terms of Services</li>
-          </ul>
-        </div>
-        {/* services  */}
-        <div>
-          <div className="text-[1.4rem] text-primary font-bold">Address</div>
-          <ul className="text-primary text-[.8rem]">
-            <li>Pricing</li>
-            <li>Tracking</li>
-            <li>Report a Bug</li>
-            <li>Terms of Services</li>
-          </ul>
+          {/* services  */}
+          <div>
+            <div className="text-[1.4rem] text-primary font-bold">Address</div>
+            <ul className="text-primary text-[.8rem]">
+              <li>Pricing</li>
+              <li>Tracking</li>
+              <li>Report a Bug</li>
+              <li>Terms of Services</li>
+            </ul>
+          </div>
         </div>
       </div>
 
