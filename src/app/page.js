@@ -197,7 +197,7 @@ export default function Home() {
 
             <div className="font-bold text-[.8rem] py-[1em]">Total Price</div>
             {/* bottom price */}
-            <div className="flex items-center w-[108%] lg:w-[122%] justify-between">
+            <div className="flex items-center w-[112%] lg:w-[122%] justify-between">
               <div className="flex items-center justify-between gap-[20px]">
                 <div className="text-[.8rem] font-bold px-[25px] py-[8px] bg-secondry/60 inline-block rounded-[50px]">
                   $3.50
@@ -257,7 +257,7 @@ export default function Home() {
 
       {/* footer section */}
       <div className="footer flex pl-[0em] flex-col justify-between mt-[4em] px-[2em]">
-        <div className="text-[white] text-[1.4rem] ">
+        <div className="mb-[1em] text-[white] text-[1.4rem]">
           <div className="flex gap-2 items-center font-bold">
             Flavored <CgCoffee />
           </div>
