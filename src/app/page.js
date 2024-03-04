@@ -43,7 +43,7 @@ export default function Home() {
       <div className="flex flex-col-reverse justify-between  items-center sm:flex-row  lg:mt-[2.4rem]">
         {/* left section  */}
         <div className="text-center sm:text-left">
-          <div className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] lg:mb-[.5em] font-bold text-primary">
+          <div className="mt-[1em] text-center md:text-left md:mt-[0em] text-[2rem] md:text-[2.5rem] lg:text-[3rem] lg:mb-[.5em] font-bold text-primary">
             Coffee <br className="hidden sm:block" /> The Best For You
           </div>
           <button
@@ -70,8 +70,8 @@ export default function Home() {
       </div>
 
       {/* price cards section */}
-      <div className="mt-[1em] my-[2em] w-[100%] flex flex-col-reverse justify-between gap-6 items-center sm:my-[4em] sm:flex-col-reverse lg:flex-row">
-        <div className="flex flex-col gap-[8rem] flex-[0.5] items-center sm:flex-row sm:gap-6 sm:mb-[0em] sm:mt-[4em]">
+      <div className="mt-[1em] my-[2em] w-[100%] flex flex-col-reverse justify-between gap-6 items-center sm:my-[4em] sm:flex-col-reverse lg:flex-row lg:mt-[12em]">
+        <div className="flex flex-col gap-[8rem] flex-[0.5] items-center sm:flex-row sm:gap-6 sm:mb-[0em] sm:mt-[4em] lg:mt-0">
           <PriceCard
             img="/images/flower2.gif"
             title="Americano"
@@ -85,7 +85,7 @@ export default function Home() {
             price="$3.50"
           />
         </div>
-        <div className="flex-[0.5] mb-[7em] sm:mb-[2em] md:text-center lg:text-left">
+        <div className="flex-[0.5] mb-[7em] sm:mb-[2em] md:text-center lg:text-left md:mb-0">
           <div className="font-bold text-[1.5rem] text-primary leading-[1.4em] md:text-[1.8rem] lg:text-[2rem]">
             Lorem Ipsum is <br className="hidden sm:block" /> simply dummy text
             of
@@ -126,7 +126,7 @@ export default function Home() {
       </div>
 
       {/* available apps section */}
-      <div className="flex flex-col my-[0em] items-center gap-[2.5em] lg:my-[4em] sm:flex-wrap sm:flex-row sm:justify-center">
+      <div className="flex flex-col my-[0em] items-center gap-[2.5em] lg:my-[4em] sm:flex-wrap sm:flex-row sm:justify-center lg:flex-nowrap">
         {/* first container  */}
         <div className=" rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c]">
           <FaAngleLeft className="text-primary" />
@@ -212,7 +212,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col mb-[3em] self-end md:text-center lg:mb-[6em] md:items-center">
+        <div className="flex flex-col mb-[3em] self-end md:text-center lg:mb-[6em] md:items-center lg:text-left">
           <div className="font-bold text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] text-primary leading-[1.4em]">
             App is Available
           </div>
@@ -222,7 +222,7 @@ export default function Home() {
             ever since the 1500s, when and unknown printer took a gallery of
             type and scramble it to make a type specimen book.
           </div>
-          <div className="flex items-center gap-[1.6em]">
+          <div className="flex items-center gap-[1.6em] lg:self-start">
             <FaApple className="w-[36px] h-[36px] p-[6px] bg-secondry/40 scale-[1.3] rounded-[10px] text-primary" />
             <IoLogoGooglePlaystore className="w-[36px] h-[36px] p-[6px] bg-secondry/40 scale-[1.3] rounded-[10px] text-primary" />
           </div>
@@ -232,7 +232,7 @@ export default function Home() {
       <div>
         <div className="text-[white] text-[.7rem]">LET'S TALK</div>
         <div className="flex flex-col sm:items-center sm:flex-row sm:justify-between">
-          <div className="font-bold pt-[0.5em] pb-[.5em] text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] text-primary leading-[1.4em]">
+          <div className="font-bold pt-[0.5em] pb-[.5em] text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] text-primary leading-[1.4em] md:pt-[0em]">
             Want to Reserve a Table?
           </div>
           <button
@@ -246,7 +246,7 @@ export default function Home() {
       {/* border rule  */}
       <div className="w-[100%] h-[2px] bg-[#ffffff66] mt-[2em] mb-[1em]"></div>
 
-      <div className="w-[100%] lg:w-[70%] text-[.7rem] md:text-center">
+      <div className="w-[100%] lg:w-[70%] text-[.7rem] md:text-center lg:text-left">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi
         quas distinctio esse tempore fuga iste magnam autem commodi natus
         quaerat ducimus optio blanditiis culpa aut ut, quia minus. Dolores porro
@@ -256,14 +256,14 @@ export default function Home() {
       </div>
 
       {/* footer section */}
-      <div className="footer flex pl-[0em] flex-col justify-between mt-[4em] px-[2em]">
+      <div className="footer flex pl-[0em] flex-col justify-between mt-[4em] px-[2em] lg:flex-row lg:pl-[2em]">
         <div className="mb-[1em] text-[white] text-[1.4rem]">
           <div className="flex gap-2 items-center font-bold">
             Flavored <CgCoffee />
           </div>
           <div className="text-[.8rem]">Wake up to something special.</div>
         </div>
-        <div className="flex flex-col justify-between sm:flex-row">
+        <div className="flex flex-col justify-between sm:flex-row lg:w-[70%] lg:items-center">
           {/* services  */}
           <div>
             <div className="text-[1.4rem] text-primary font-bold">
@@ -302,7 +302,7 @@ export default function Home() {
       </div>
 
       {/* footer  */}
-      <footer className="py-[2em] text-center text-primary text-s">
+      <footer className="py-[2em] text-center text-primary">
         UI developed by <span className="font-bold">Mudasir Web Solutions</span>
       </footer>
       {/* container div ends here */}
