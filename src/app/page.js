@@ -18,9 +18,9 @@ import { CgCoffee } from "react-icons/cg";
 
 export default function Home() {
   return (
-    <div className="w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 p-[4em]">
+    <div className="p-[1em] w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 lg:p-[4em] pb-[0em]">
       {/* navigation bar */}
-      <nav className="w-[100%] flex justify-between items-center">
+      <nav className="w-[100%]  justify-between items-center hidden">
         <div className="text-primary text-[1.4rem] ">
           <div className="flex gap-2 items-center font-bold">
             Flavored <CgCoffee />
@@ -40,19 +40,19 @@ export default function Home() {
         </ul>
       </nav>
       {/* double heart coffe (menu) section */}
-      <div className="flex justify-between items-center mt-[2.4rem]">
+      <div className="flex flex-col-reverse justify-between  items-center md:flex-row  lg:mt-[2.4rem]">
         {/* left section  */}
-        <div className="">
-          <div className="text-[3rem] mb-[.5em] font-bold text-primary">
-            Coffee <br /> The Best For You
+        <div className="text-center">
+          <div className="text-[2rem] lg:text-[3rem] lg:mb-[.5em] font-bold text-primary">
+            Coffee <br className="hidden" /> The Best For You
           </div>
           <button
-            className={`px-[2.8em] py-[.7em] text-[.9em] bg-primary text-secondry rounded-full btnShadow`}
+            className={`px-[2.8em] my-[2em] py-[.7em] text-[.9em] bg-primary text-secondry rounded-full btnShadow`}
           >
             View Menu
           </button>
           {/*four menu-items icons */}
-          <div className="flex gap-3 items-center my-[1.5em]">
+          <div className="flex gap-3 justify-between items-center my-[1.5em]">
             <TbCoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
             <SiBuymeacoffee className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
             <SiCoffeescript className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
@@ -62,7 +62,7 @@ export default function Home() {
         {/* right section */}
         <div>
           <img
-            className="w-[400px] rotatingAnim"
+            className="w-[200px] my-[1em] lg:w-[300px] rotatingAnim"
             src="/images/two-hearts.gif"
             alt=""
           />
@@ -70,8 +70,8 @@ export default function Home() {
       </div>
 
       {/* price cards section */}
-      <div className="my-[4em] w-[100%] flex justify-between gap-6 items-center mt-[8em]">
-        <div className="flex flex-[0.5] gap-6 items-center">
+      <div className="mt-[1em] my-[2em] w-[100%] flex flex-col-reverse  md:my-[4em]  justify-between gap-6 items-center lg:mt-[8em]">
+        <div className="flex flex-col gap-[8rem] flex-[0.5] lg:gap-6 items-center">
           <PriceCard
             img="/images/flower2.gif"
             title="Americano"
@@ -81,13 +81,14 @@ export default function Home() {
           <PriceCard
             img="/images/spawn-image.gif"
             title="Cappuccino"
-            description="Coffee 50%, milk 50%, 280 ml"
+            description="Healthy Coffee 50%, milk 50%, 280 ml"
             price="$3.50"
           />
         </div>
-        <div className="flex-[0.5]">
-          <div className="font-bold text-[2rem] text-primary leading-[1.4em]">
-            Lorem Ipsum is <br /> simply dummy text of
+        <div className="flex-[0.5] mb-[7em]">
+          <div className="font-bold text-[1.5rem] text-primary leading-[1.4em] lg:text-[2rem]">
+            Lorem Ipsum is <br className="hidden lg:block" /> simply dummy text
+            of
           </div>
           <div className="leading-[2em] text-[.8rem] py-[1em]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
@@ -98,12 +99,13 @@ export default function Home() {
       </div>
 
       {/* section with text on left and pic on right */}
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col-reverse mb-[2em] lg:justify-between lg:items-center">
         {/* left div */}
         <div>
-          <div className="font-bold text-[2rem] text-primary leading-[1.4em]">
-            Lorem Ipsum is simply dummy text <br /> of the printing and
-            typesetting <br /> industry.
+          <div className="font-bold text-[1.5rem] text-primary leading-[1.4em] lg:text-[2rem]">
+            Lorem Ipsum is simply dummy text <br className="hidden lg:block" />{" "}
+            of the printing and typesetting <br className="hidden lg:block" />{" "}
+            industry.
           </div>
           <div className="leading-[2em] text-[.8rem] py-[1em] tracking-wide">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
@@ -117,14 +119,14 @@ export default function Home() {
         </div>
         {/* right div containing image */}
         <img
-          className="w-[350px] text-right"
+          className="w-[200px] block mx-[auto] py-[1em] text-center lg:w-[350px] lg:text-right"
           src="/images/coffee-heart.gif"
           alt=""
         />
       </div>
 
       {/* available apps section */}
-      <div className="flex gap-[2.5em] my-[4em]">
+      <div className="flex flex-col my-[0em] items-center gap-[2.5em] lg:my-[4em]">
         {/* first container  */}
         <div className=" rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c]">
           <FaAngleLeft className="text-primary" />
@@ -142,7 +144,7 @@ export default function Home() {
             <SiCoffeescript className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
             <GiCoffeeBeans className="w-[40px] h-[40px] p-[6px] bg-secondry rounded-[15px] text-primary hover:scale-[1.1] cursor-pointer elmTransition" />
           </div>
-          <div className="flex justify-between items-center w-[100%]">
+          <div className="flex justify-between items-center mt-[-1em] w-[100%]">
             <div className="scale-[0.5] mx-[-50%] ml-[-64px]">
               <PriceCard
                 img="/images/spawn-image.gif"
@@ -160,7 +162,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="text-primary mt-[1em] mb-[.5em] w-[80%] backdrop-blur-[50px] bg-gradient-to-tr from-[#b8b8b814] to-[#ffffff5c] p-[1em] rounded-[15px]">
+          <div className="text-primary mt-[-1em] mb-[2em] w-[80%] backdrop-blur-[50px] bg-gradient-to-tr from-[#b8b8b814] to-[#ffffff5c] p-[1em] rounded-[15px]">
             <div className="font-bold">Moccaccino</div>
             <div className="text-[12px] pt-2">
               Mix with Coffee 30%, milk 50%, 280 ml + foam
@@ -180,7 +182,7 @@ export default function Home() {
           <FaAngleLeft className="text-primary" />
 
           <img
-            className="scale-[1.3] mt-[51px]"
+            className="lg:scale-[1.3] mt-[51px]"
             src="/images/single-heart.gif"
             alt=""
           />
@@ -195,7 +197,7 @@ export default function Home() {
 
             <div className="font-bold text-[.8rem] py-[1em]">Total Price</div>
             {/* bottom price */}
-            <div className="flex items-center w-[122%] justify-between">
+            <div className="flex items-center w-[108%] lg:w-[122%] justify-between">
               <div className="flex items-center justify-between gap-[20px]">
                 <div className="text-[.8rem] font-bold px-[25px] py-[8px] bg-secondry/60 inline-block rounded-[50px]">
                   $3.50
@@ -210,8 +212,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col self-end mb-[6em]">
-          <div className="font-bold text-[2rem] text-primary leading-[1.4em]">
+        <div className="flex flex-col mb-[3em] self-end lg:mb-[6em]">
+          <div className="font-bold text-[1.5rem] lg:text-[2rem] text-primary leading-[1.4em]">
             App is Available
           </div>
           <div className="leading-[2em] text-[.8rem] py-[1em]">
@@ -229,12 +231,12 @@ export default function Home() {
 
       <div>
         <div className="text-[white] text-[.7rem]">LET'S TALK</div>
-        <div className="flex justify-between items-center">
-          <div className="font-bold text-[2rem] text-primary leading-[1.4em]">
+        <div className="flex flex-col lg:justify-between lg:items-center">
+          <div className="font-bold pt-[0.5em] pb-[.5em] text-[1.5rem] lg:text-[2rem] text-primary leading-[1.4em]">
             Want to Reserve a Table?
           </div>
           <button
-            className={`px-[2.8em] py-[.7em] text-[.9em] bg-primary text-secondry rounded-full btnShadow`}
+            className={`px-[2.8em] self-start py-[.7em] text-[.9em] bg-primary text-secondry rounded-full btnShadow`}
           >
             View Menu
           </button>
@@ -244,7 +246,7 @@ export default function Home() {
       {/* border rule  */}
       <div className="w-[100%] h-[2px] bg-[#ffffff66] mt-[2em] mb-[1em]"></div>
 
-      <div className="w-[70%] text-[.7rem]">
+      <div className="w-[100%] lg:w-[70%] text-[.7rem]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi
         quas distinctio esse tempore fuga iste magnam autem commodi natus
         quaerat ducimus optio blanditiis culpa aut ut, quia minus. Dolores porro
@@ -254,7 +256,7 @@ export default function Home() {
       </div>
 
       {/* footer section */}
-      <div className="footer flex justify-between mt-[4em] px-[2em]">
+      <div className="footer flex pl-[0em] flex-col justify-between mt-[4em] px-[2em]">
         <div className="text-[white] text-[1.4rem] ">
           <div className="flex gap-2 items-center font-bold">
             Flavored <CgCoffee />
@@ -297,6 +299,10 @@ export default function Home() {
         </div>
       </div>
 
+      {/* footer  */}
+      <footer className="py-[2em] text-center text-primary text-s">
+        UI developed by <span className="font-bold">Mudasir Web Solutions</span>
+      </footer>
       {/* container div ends here */}
     </div>
   );
