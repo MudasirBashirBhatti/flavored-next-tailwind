@@ -8,21 +8,30 @@
   box-sizing: border-box;
   /* border: 1px solid red; */
 }
-body {
+.fullBg {
   width: 100%;
   height: 100vh;
   background: url(../../public/images/background3.jpg);
-  background-attachment: fixed;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 nav ul li {
   font-size: 0.9rem;
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: rgb(139, 0, 0);
+  transition: 0.3s;
 }
 .footer ul li {
   cursor: pointer;
   margin: 6px 0px;
   padding: 2px 0px;
+}
+.footer ul li:hover {
+  transform: translateX(7px);
+  transition: 0.3s;
 }
 
 .btnShadow {

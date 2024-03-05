@@ -15,32 +15,12 @@ import { FaPlus } from "react-icons/fa6";
 import { FaApple } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { CgCoffee } from "react-icons/cg";
-import { RxHamburgerMenu } from "react-icons/rx";
+// import { RxHamburgerMenu } from "react-icons/rx";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="p-[1em] w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 lg:p-[4em] pb-[0em] md:p-[2em]">
-      {/* navigation bar */}
-      <nav className="mb-[2em] md:mb-[0em] flex w-[100%] justify-between items-center ">
-        <div className="text-primary text-[1.4rem] ">
-          <div className="flex gap-2 items-center font-bold">
-            Flavored <CgCoffee />
-          </div>
-          <div className="text-[.8rem]">Wake up to something special.</div>
-        </div>
-        <ul className="md:flex justify-between items-center w-[500px] list-none text-primary hidden">
-          <li>Home</li>
-          <li>Coffee Menu</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <button
-            className={`px-[.8em] py-[.46em] text-[.9em] bg-primary text-secondry rounded-full`}
-          >
-            Coffee Shop
-          </button>
-        </ul>
-        <RxHamburgerMenu className="block md:hidden text-primary text-[1.6rem] cursor-pointer" />
-      </nav>
+    <div className="">
       {/* double heart coffe (menu) section */}
       <div className="flex flex-col-reverse justify-between  items-center sm:flex-row  lg:mt-[2.4rem]">
         {/* left section  */}
@@ -245,68 +225,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* border rule  */}
-      <div className="w-[100%] h-[2px] bg-[#ffffff66] mt-[2em] mb-[1em]"></div>
-
-      <div className="w-[100%] lg:w-[70%] text-[.7rem] md:text-center lg:text-left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi
-        quas distinctio esse tempore fuga iste magnam autem commodi natus
-        quaerat ducimus optio blanditiis culpa aut ut, quia minus. Dolores porro
-        excepturi iusto alias doloremque magni soluta volupt Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Iure, accusantium! atum neque
-        velit?
-      </div>
-
-      {/* footer section */}
-      <div className="footer flex pl-[0em] flex-col justify-between mt-[4em] px-[2em] lg:flex-row lg:pl-[2em]">
-        <div className="mb-[1em] text-[white] text-[1.4rem]">
-          <div className="flex gap-2 items-center font-bold">
-            Flavored <CgCoffee />
-          </div>
-          <div className="text-[.8rem]">Wake up to something special.</div>
-        </div>
-        <div className="flex flex-col justify-between sm:flex-row lg:w-[70%] lg:items-center">
-          {/* services  */}
-          <div>
-            <div className="text-[1.4rem] text-primary font-bold">
-              Our Services
-            </div>
-            <ul className="text-primary text-[.8rem]">
-              <li>Pricing</li>
-              <li>Tracking</li>
-              <li>Report a Bug</li>
-              <li>Terms of Services</li>
-            </ul>
-          </div>
-          {/* Coumpany  */}
-          <div>
-            <div className="text-[1.4rem] text-primary font-bold">
-              Our Company
-            </div>
-            <ul className="text-primary text-[.8rem]">
-              <li>Pricing</li>
-              <li>Tracking</li>
-              <li>Report a Bug</li>
-              <li>Terms of Services</li>
-            </ul>
-          </div>
-          {/* services  */}
-          <div>
-            <div className="text-[1.4rem] text-primary font-bold">Address</div>
-            <ul className="text-primary text-[.8rem]">
-              <li>Pricing</li>
-              <li>Tracking</li>
-              <li>Report a Bug</li>
-              <li>Terms of Services</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* footer  */}
-      <footer className="py-[2em] text-center text-primary">
-        UI developed by <span className="font-bold">Mudasir Web Solutions</span>
-      </footer>
       {/* container div ends here */}
     </div>
   );
