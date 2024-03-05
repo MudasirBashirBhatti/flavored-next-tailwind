@@ -15,19 +15,20 @@ import { FaPlus } from "react-icons/fa6";
 import { FaApple } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { CgCoffee } from "react-icons/cg";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Home() {
   return (
     <div className="p-[1em] w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 lg:p-[4em] pb-[0em] md:p-[2em]">
       {/* navigation bar */}
-      <nav className="w-[100%] justify-between items-center hidden">
+      <nav className="mb-[2em] md:mb-[0em] flex w-[100%] justify-between items-center ">
         <div className="text-primary text-[1.4rem] ">
           <div className="flex gap-2 items-center font-bold">
             Flavored <CgCoffee />
           </div>
           <div className="text-[.8rem]">Wake up to something special.</div>
         </div>
-        <ul className="flex justify-between items-center w-[500px] list-none text-primary">
+        <ul className="md:flex justify-between items-center w-[500px] list-none text-primary hidden">
           <li>Home</li>
           <li>Coffee Menu</li>
           <li>About Us</li>
@@ -38,12 +39,13 @@ export default function Home() {
             Coffee Shop
           </button>
         </ul>
+        <RxHamburgerMenu className="block md:hidden text-primary text-[1.6rem] cursor-pointer" />
       </nav>
       {/* double heart coffe (menu) section */}
       <div className="flex flex-col-reverse justify-between  items-center sm:flex-row  lg:mt-[2.4rem]">
         {/* left section  */}
         <div className="text-center sm:text-left">
-          <div className="mt-[1em] text-center md:text-left md:mt-[0em] text-[2rem] md:text-[2.5rem] lg:text-[3rem] lg:mb-[.5em] font-bold text-primary">
+          <div className="mt-[1em] text-center sm:text-left md:mt-[0em] text-[2rem] md:text-[2.5rem] lg:text-[3rem] lg:mb-[.5em] font-bold text-primary">
             Coffee <br className="hidden sm:block" /> The Best For You
           </div>
           <button
@@ -171,19 +173,19 @@ export default function Home() {
           {/* coffee card menus */}
 
           <div className="flex justify-evenly items-center text-secondry bg-primary rounded-[50px] py-[.3em] text-[2rem]">
-            <RiHomeSmileLine />
-            <BsCart2 />
-            <PiUserLight />
-            <RiBarChartHorizontalLine className="rotate-180" />
+            <RiHomeSmileLine className="cursor-pointer hover:scale-[1.2] transition-[.3s]" />
+            <BsCart2 className="cursor-pointer hover:scale-[1.2] transition-[.3s]" />
+            <PiUserLight className="cursor-pointer hover:scale-[1.2] transition-[.3s]" />
+            <RiBarChartHorizontalLine className="rotate-180 cursor-pointer hover:scale-[1.2] transition-[.3s]" />
           </div>
         </div>
         {/* second container  */}
-        <div className="rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c] flex justify-between flex-col">
+        <div className="rounded-[15px] w-[300px] p-[1em] backdrop-blur-[50px] bg-gradient-to-tl from-[white] to-[#ffc0cb1c] flex justify-between flex-col latteGrandCard">
           <FaAngleLeft className="text-primary" />
 
           <img
             className="lg:scale-[1.3] mt-[51px]"
-            src="/images/single-heart.gif"
+            src="/images/single-heart.gif "
             alt=""
           />
 
@@ -213,7 +215,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col mb-[3em] self-end md:text-center lg:mb-[6em] md:items-center lg:text-left">
-          <div className="font-bold text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] text-primary leading-[1.4em]">
+          <div className="font-bold text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] text-primary leading-[1.4em] lg:self-start">
             App is Available
           </div>
           <div className="leading-[2em] text-[.8rem] py-[1em]">
@@ -223,8 +225,8 @@ export default function Home() {
             type and scramble it to make a type specimen book.
           </div>
           <div className="flex items-center gap-[1.6em] lg:self-start">
-            <FaApple className="w-[36px] h-[36px] p-[6px] bg-secondry/40 scale-[1.3] rounded-[10px] text-primary" />
-            <IoLogoGooglePlaystore className="w-[36px] h-[36px] p-[6px] bg-secondry/40 scale-[1.3] rounded-[10px] text-primary" />
+            <FaApple className="w-[36px] h-[36px] p-[6px] bg-secondry/40 scale-[1.3] rounded-[10px] text-primary cursor-pointer hover:scale-[1.4] transition-[.3s]" />
+            <IoLogoGooglePlaystore className="w-[36px] h-[36px] p-[6px] bg-secondry/40 scale-[1.3] rounded-[10px] text-primary cursor-pointer hover:scale-[1.4] transition-[.3s]" />
           </div>
         </div>
       </div>

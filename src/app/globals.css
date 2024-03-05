@@ -38,7 +38,6 @@ nav ul li {
     rgba(219, 158, 3, 1) 100%
   );
 }
-
 .elmTransition {
   transition: all;
   transition-duration: 0.1s;
@@ -53,5 +52,36 @@ nav ul li {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* priceCard setting */
+.priceCard:hover > img {
+  /* transform:  rotate(180deg); */
+  transition: 0.3s;
+  animation: priceCardAnim 50s infinite linear;
+}
+
+@keyframes priceCardAnim {
+  0% {
+    transform: translateX(-50%) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg) scale(1.03);
+  }
+}
+
+/* latteGrand card  */
+@media screen and (min-width: 1024px) {
+  .latteGrandCard:hover > img {
+    animation: latteGrandCardAnim 50s infinite linear;
+  }
+  @keyframes latteGrandCardAnim {
+    0% {
+      transform: scale(1.3) rotate(0deg);
+    }
+    100% {
+      transform: scale(1.3) rotate(360deg);
+    }
   }
 }
