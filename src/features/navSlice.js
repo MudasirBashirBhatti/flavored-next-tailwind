@@ -1,7 +1,7 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-  value: "-100%",
+  value: "-110%",
 };
 
 const navSlice = createSlice({
