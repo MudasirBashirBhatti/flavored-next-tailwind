@@ -1,7 +1,11 @@
+"use client";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CgCoffee } from "react-icons/cg";
+import { useDispatch } from "react-redux";
+import { mobileNavDiv } from "@/features/navSlice";
 
 const TopNav = () => {
+  let dispatch = useDispatch();
   return (
     <div>
       {/* navigation bar */}
@@ -23,7 +27,10 @@ const TopNav = () => {
             Coffee Shop
           </button>
         </ul>
-        <RxHamburgerMenu className="block md:hidden text-primary text-[1.6rem] cursor-pointer" />
+        <RxHamburgerMenu
+          onClick={() => dispatch(mobileNavDiv())}
+          className="block md:hidden text-primary text-[1.6rem] cursor-pointer"
+        />
       </nav>
     </div>
   );
