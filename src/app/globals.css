@@ -16,11 +16,11 @@
   background-attachment: fixed;
 }
 
-nav ul li {
+nav ul .li {
   font-size: 0.9rem;
   cursor: pointer;
 }
-nav ul li:hover {
+nav ul .li:hover {
   color: rgb(139, 0, 0);
   transition: 0.3s;
 }

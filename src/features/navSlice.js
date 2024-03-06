@@ -1,7 +1,8 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-  value: "-110%",
+  height: "90px",
+  background: "none",
 };
 
 const navSlice = createSlice({
@@ -9,10 +10,12 @@ const navSlice = createSlice({
   initialState,
   reducers: {
     mobileNavDiv: (state) => {
-      if (state.value === "-110%") {
-        state.value = "0%";
+      if (state.height === "440px") {
+        state.height = "90px";
+        state.background = "none";
       } else {
-        state.value = "-110%";
+        state.height = "440px";
+        state.background = "white";
       }
     },
   },
