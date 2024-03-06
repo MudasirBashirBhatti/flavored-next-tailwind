@@ -14,8 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="fullBg">
       <body
-        className={`${inter.className}p-[1em] w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 lg:p-[4em] pb-[0em] md:p-[2em]`}
+        className={`${inter.className}p-[1em] relative w-[100%] backdrop-blur-[40px] bg-gradient-to-b from-[white]/30 to-[black]/40 bg-white/30 lg:p-[4em] pb-[0em] md:p-[2em]`}
       >
+        <div className="w-[100vw] h-[100vh] absolute bg-primary left-0 top-0 z-10"></div>
         <TopNav />
         {children}
         <Footer />
