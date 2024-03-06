@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { mobileNavDiv } from "@/features/navSlice";
 import MobileAnchors from "./MobileAnchors";
 import Link from "next/link";
-import { useState } from "react";
 
 const TopNav = () => {
   let increaseHeight = useSelector((state) => state.navSlice.height);
