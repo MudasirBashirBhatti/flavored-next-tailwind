@@ -9,10 +9,10 @@ const navSlice = createSlice({
   initialState,
   reducers: {
     mobileNavDiv: (state) => {
-      if (state.value === "-100%") {
+      if (state.value === "-110%") {
         state.value = "0%";
       } else {
-        state.value = "-100%";
+        state.value = "-110%";
       }
     },
   },
