@@ -13,7 +13,7 @@ const TopNav = () => {
   let dispatch = useDispatch();
   return (
     <div
-      className={`rounded-[10px] overflow-hidden p-[1em] bg-[rgb(247,247,247)] md:bg-none transition-[3s] ease-in-out`}
+      className={`rounded-[10px] overflow-hidden py-[1em] bg-[rgb(247,247,247)] md:bg-none transition-[3s] ease-in-out`}
       style={{ height: `${increaseHeight}`, background: `${bgColor}` }}
     >
       {/* navigation bar */}
