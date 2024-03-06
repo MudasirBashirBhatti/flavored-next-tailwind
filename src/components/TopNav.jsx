@@ -25,7 +25,7 @@ const TopNav = () => {
           <div className="text-[.8rem]">Wake up to something special.</div>
         </div>
         <ul className="md:flex justify-between items-center w-[500px] list-none text-primary hidden">
-          <Link href="/" className="li" onClick={hamburgerIconFunc}>
+          <Link href="/" className="li">
             Home
           </Link>
           <Link href="/coffee-menu" className="li">
