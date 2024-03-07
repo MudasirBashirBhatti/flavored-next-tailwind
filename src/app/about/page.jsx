@@ -11,14 +11,18 @@ const page = () => {
   return (
     <div className="relative px-[16px]">
       <div>
-        <div className="font-bold text-primary text-[1.3rem]">Project Name</div>
-        <div className="text-primary text-[.9rem] mb-[1.5em]">Flavored App</div>
+        <div className="font-bold text-primary text-[1.3rem] md:text-[1.1rem]">
+          Project Name
+        </div>
+        <div className="text-primary text-[.9rem] md:text-[.7rem] mb-[1.5em]">
+          Flavored App
+        </div>
       </div>
       <div>
-        <div className="font-bold text-primary text-[1.3rem]">
+        <div className="font-bold text-primary text-[1.3rem] md:text-[1.1rem]">
           Web Technologies
         </div>
-        <ul className="text-primary text-[.9rem] mb-[1.5em]">
+        <ul className="text-primary text-[.9rem] md:text-[.7rem] mb-[1.5em]">
           <li>Next.js</li>
           <li>Tailwind CSS (For Styling)</li>
           <li>Redux Toolkit (For State Management)</li>
@@ -26,28 +30,30 @@ const page = () => {
       </div>
 
       <div>
-        <div className="font-bold text-primary text-[1.3rem]">
+        <div className="font-bold text-primary text-[1.3rem] md:text-[1.1rem]">
           Project berief Introduction:
         </div>
-        <div className="text-primary text-[.9rem] mb-[1.5em]">
+        <div className="text-primary text-[.9rem] md:text-[.7rem] mb-[1.5em]">
           Flavored is a portfolio web project built using Next.js, Tailwind CSS,
           and Redux Toolkit for state management.
-          <div className="font-bold text-primary text-[1.2rem]">
+          <div className="font-bold text-primary text-[1.2rem] md:text-[1rem] pt-[.8rem]">
             Key Features
           </div>
-          <div className="font-bold text-primary text-[1.1rem]">Next.js</div>
+          <div className="font-bold text-primary text-[1.1rem] md:text-[.8rem] pt-[.6em]">
+            Next.js
+          </div>
           Next.js is utilized as the framework for building the web application.
           It offers server-side rendering, static site generation, and routing
           capabilities, making the website fast, SEO-friendly, and highly
           scalable.
-          <div className="font-bold text-primary text-[1.1rem]">
+          <div className="font-bold text-primary text-[1.1rem] md:text-[.8rem]  pt-[.6em]">
             Tailwind CSS
           </div>
           Tailwind CSS is chosen as the primary CSS framework for styling the
           components. Tailwind CSS provides a utility-first approach, allowing
           for rapid development and customization of styles without writing
           custom CSS. This results in a clean and maintainable codebase.
-          <div className="font-bold text-primary text-[1.1rem]">
+          <div className="font-bold text-primary text-[1.1rem] md:text-[.8rem] pt-[.6em]">
             Redux Toolkit
           </div>
           Redux Toolkit is used for state management within the application. It
@@ -55,28 +61,28 @@ const page = () => {
           allowing for predictable and scalable state management across
           components. Redux Toolkit simplifies common Redux tasks such as
           creating actions, reducers, and middleware.
-          <div className="font-bold text-primary text-[1.1rem]">
+          <div className="font-bold text-primary text-[1.1rem] md:text-[.8rem] pt-[.6em]">
             Design Inspiration From Pinterest
           </div>
           The design inspiration for Flavored is sourced from Pinterest,
           leveraging the vast collection of design ideas and inspiration
           available on the platform. The design elements are carefully curated
           to create a visually appealing and engaging user experience.
-          <div className="font-bold text-primary text-[1.1rem]">
+          <div className="font-bold text-primary text-[1.1rem] md:text-[.8rem] pt-[.6em]">
             Interactive User Infterface
           </div>
           Interactive User Interface: The website features an interactive user
           interface with smooth transitions, animations, and dynamic content
           loading. Users can navigate through different sections of the
           portfolio seamlessly, enhancing the overall user experience.
-          <div className="font-bold text-primary text-[1.1rem]">
+          <div className="font-bold text-primary text-[1.1rem] md:text-[.8rem] pt-[.6em]">
             Responsive Design
           </div>
           Flavored is designed to be responsive across various devices and
           screen sizes. The layout and components adjust dynamically to provide
           an optimal viewing experience on desktops, laptops, tablets, and
           mobile devices.
-          <div className="font-bold text-primary text-[1.1rem]">
+          <div className="font-bold text-primary text-[1.1rem] md:text-[.8rem] pt-[.6em]">
             Portfolio Showcase
           </div>
           The main focus of Flavored is to showcase the portfolio, highlighting
