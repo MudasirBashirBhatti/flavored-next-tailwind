@@ -134,7 +134,7 @@ let coffee = [
   },
   //   3 flavored coffee
   {
-    id: 2,
+    id: 3,
     category: "Flavoured Coffee",
     flavours: [
       {
