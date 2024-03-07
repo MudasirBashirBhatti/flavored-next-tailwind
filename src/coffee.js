@@ -130,6 +130,20 @@ let coffee = [
           " Changes with the seasons, featuring fresh and seasonal flavors inspired by the time of year, such as fruity and floral notes for spring and summer blends, or warm and spiced flavors for fall and winter blends.",
         price: "$1.30",
       },
+      {
+        sub_id: 8,
+        title: "Summer Blend",
+        description:
+          "Medium to dark roast, often seasonal, featuring warm and festive flavors like cinnamon, nutmeg, and spices, combined with hints of cocoa, caramel, and dried fruits. A cozy and comforting choice during the holiday season.",
+        price: "$2.15",
+      },
+      {
+        sub_id: 9,
+        title: "Treasure Blend",
+        description:
+          " Customized blend created by coffee roasters or cafes, offering a unique taste profile tailored to their specific preferences and customer preferences. Can vary widely in flavor, aroma, and intensity based on the blend's composition and roast level.",
+        price: "$4.30",
+      },
     ],
   },
   //   3 flavored coffee
