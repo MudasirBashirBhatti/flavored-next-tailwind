@@ -5,6 +5,7 @@ import coffee from "@/coffee";
 
 const page = () => {
   const [pageNum, setpageNum] = useState(1);
+  const [nextPrev, setnextPrev] = useState("red");
   let productsPerPage = 4;
   let totalPages = 2;
   let lastIndex = pageNum * productsPerPage;
@@ -20,6 +21,15 @@ const page = () => {
     if (pageNum < 2) {
       setpageNum(1);
     }
+  }
+
+  let page = [];
+  for (let i = 1; i <= 3; i++) {
+    page.push(i);
+  }
+
+  function handlePageChange(pageCount) {
+    setpageNum(pageCount);
   }
 
   return (
@@ -50,7 +60,7 @@ const page = () => {
       ))}
       {/* pagination */}
       <div className="flex justify-center">
-        <div className="inline-flex gap-6 items-center bg-secondry rounded-md mt-[5em]">
+        <div className="inline-flex gap-6 items-center backdrop-blur-[50px] bg-secondry/40 rounded-md mt-[5em]">
           <div
             onClick={() => pageCountDecrement()}
             className="bg-primary text-secondry px-[8px] py-[3px] rounded-md cursor-pointer"
@@ -58,21 +68,19 @@ const page = () => {
             Prev
           </div>
           <div className="flex gap-3 items-center">
-            <div className="w-[20px] text-[.8rem] h-[20px] bg-primary flex justify-center items-center text-secondry rounded-full">
-              1
-            </div>
-            <div className="w-[20px] text-[.8rem] h-[20px] bg-primary flex justify-center items-center text-secondry rounded-full">
-              1
-            </div>
-            <div className="w-[20px] text-[.8rem] h-[20px] bg-primary flex justify-center items-center text-secondry rounded-full">
-              1
-            </div>
-            <div className="w-[20px] text-[.8rem] h-[20px] bg-primary flex justify-center items-center text-secondry rounded-full">
-              1
-            </div>
-            <div className="w-[20px] text-[.8rem] h-[20px] bg-primary flex justify-center items-center text-secondry rounded-full">
-              1
-            </div>
+            {page.map((pageCount, index) => (
+              <div
+                onClick={() => handlePageChange(pageCount)}
+                key={index}
+                className={`w-[20px] text-[.8rem] h-[20px]  font-bold flex justify-center items-center  rounded-full cursor-pointer ${
+                  pageNum === pageCount
+                    ? "text-secondry bg-primary"
+                    : "text-primary bg-secondry"
+                }`}
+              >
+                {pageCount}
+              </div>
+            ))}
           </div>
           <div
             className="bg-primary text-secondry px-[8px] py-[3px] rounded-md cursor-pointer"
