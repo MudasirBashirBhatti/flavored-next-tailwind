@@ -39,7 +39,7 @@ const page = () => {
       </div>
       {coffee.map((category) => (
         <div key={category.id}>
-          <h2 className="mt-[2em] text-[1.5rem] text-primary font-bold bg-secondry mb-[.5em] p-[1em] inline-block rounded-[10px] headingShadow">
+          <h2 className="mt-[2em] text-[1.5rem] text-primary font-bold bg-secondry mb-[.5em] px-[1em] py-[.4em] inline-block rounded-[10px] headingShadow">
             {category.category}
           </h2>
           <div className="w-[100%] h-[2px] mb-[7em] bg-primary"></div>
